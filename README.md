@@ -1,8 +1,12 @@
 hello-armeria
 ========
 
-[Armeria](http://line.github.io/armeria/)
+###[Armeria](http://line.github.io/armeria/)
 
-client(nodejs): THttpClient
+### hello-armeria-client
 
-server(java): Armeria server
+THttpClient (nodejs)
+
+### hello-armeria-server
+
+com.linecorp.armeria.server.Server (java)

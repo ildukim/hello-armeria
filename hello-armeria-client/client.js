@@ -4,7 +4,8 @@ var HelloService = require('./gen-nodejs/HelloService');
 
 var options = {
   transport:  thrift.TBufferedTransport,
-  protocol: thrift.TBinaryProtocol,
+  // protocol: thrift.TBinaryProtocol,
+  protocol: thrift.TJSONProtocol,
   path: '/hello',
   headers: {'Connection': 'Close'}
 };

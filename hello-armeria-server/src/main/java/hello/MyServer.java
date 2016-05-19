@@ -15,7 +15,7 @@ public class MyServer {
         sb.port(9090, SessionProtocol.HTTP);
         sb.serviceAt(
                 "/hello",
-                ThriftService.of(helloHandler, SerializationFormat.THRIFT_BINARY)
+                ThriftService.of(helloHandler, SerializationFormat.THRIFT_JSON)
                         .decorate(LoggingService::new)).build();
 
         Server server = sb.build();
